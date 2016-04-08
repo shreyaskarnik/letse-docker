@@ -1,4 +1,4 @@
-# Docker Container Based on [Letse](https://github.com/c4milo/letse)
+# Docker Image Based on [Letse](https://github.com/c4milo/letse)
 ## Uses LetsEncrypt DNS Challenge for Route53
 ## Expects that [AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment) are setup (so that they can be supplied to the Docker container)
 
