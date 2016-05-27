@@ -1,6 +1,6 @@
 # Docker Image Based on [Letse](https://github.com/c4milo/letse)
 ### Uses LetsEncrypt DNS Challenge for Route53
-### Expects that [AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment) are setup (so that they can be supplied to the Docker container)
+#### Expects that [AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment) are setup (so that they can be supplied to the Docker container)
 
 <pre>
 <code>
@@ -16,6 +16,6 @@ docker run -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION -e AWS_ACCESS_KEY_ID=$AWS_A
 </code>
 </pre>
 
-### Certificates will be stored in `certificate_output_path` as `domain_name-fullchain.pem` and `domain_name.key` alongwith [Diffie-Helman](https://wiki.openssl.org/index.php/Diffie-Hellman_parameters) parameters as `dhparams.pem`
+#### Certificates will be stored in `certificate_output_path` as `domain_name-fullchain.pem` and `domain_name.key` alongwith [Diffie-Helman](https://wiki.openssl.org/index.php/Diffie-Hellman_parameters) parameters as `dhparams.pem`
 
-### pull pre-built image from DockerHub `docker pull shreyask/letse-docker`
+#### pull pre-built image from DockerHub `docker pull shreyask/letse-docker`
